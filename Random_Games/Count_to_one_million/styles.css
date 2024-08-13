@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Adjusted for mobile layout */
+}
+
+#numberDisplay {
+    font-size: 3rem;
+    margin: 20px 0;
+    width: 100%; /* Adjusted for mobile width */
+    text-align: center;
+}
+
+button {
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%; /* Adjusted for mobile width */
+    max-width: 200px; /* Ensures buttons don't get too large */
+}
+
+.hidden {
+    display: none;
+}
+
+#winnerText {
+    font-size: 2rem;
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .counter-container {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    button {
+        width: auto; /* Original width settings for larger screens */
+        margin: 0 10px;
+    }
+
+    #numberDisplay {
+        margin: 0 20px;
+        width: 200px; /* Original width settings for larger screens */
+    }
+}
