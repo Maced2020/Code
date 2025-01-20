@@ -28,12 +28,6 @@ password_generator()
 
 again = input("would you like another password?(y/n): ")
 
-# if again.upper() != "YES" or again.upper() != "Y" or again.upper() != "No" or again.upper() != "N" :
-#     print(again.upper())
-#     print("You are clearly not following the rules; you must be a hacker")
-#     sys.exit()
-
-
 while again.upper() == "YES" or again.upper() == "Y":
     password_generator()
     again = input("would you like another password?(y/n): ")
@@ -42,5 +36,3 @@ else:
     print()
     print("No more passwords will be generated; Application will close")
     sys.exit()
-
-    # The no option works but the yes option does not work as expected. I will probably need a while loop
